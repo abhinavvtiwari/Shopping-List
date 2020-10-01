@@ -1,6 +1,6 @@
 var button = document.getElementById("button");
 var input = document.getElementById("userinput");
-var ul = document.querySelector("ul");
+var ul = document.querySelector("ol");
 
 function inputLength()
 {
@@ -19,13 +19,13 @@ button.addEventListener("click", function(){
 	if(inputLength() > 0)
 		createElement();
 	else 
-		return();
+		return;
 })
 
 input.addEventListener("keypress", function(event){
 	if(inputLength() > 0 && event.keyCode === 13)
 		createElement();
 	else
-		return();
+		return;
 
 })
